@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.MenuActivity">
+
+    <ImageView
+        android:id="@+id/vinilo"
+        android:layout_width="145dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:contentDescription="@string/img_vinilo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vinilo" />
+
+    <Button
+        android:id="@+id/btn_infperso"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/inf_perso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_infperso"
+        app:layout_constraintTop_toBottomOf="@+id/vinilo" />
+
+    <ImageView
+        android:id="@+id/img_infperso"
+        android:layout_width="82dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_infperso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vinilo"
+        app:srcCompat="@drawable/grupo" />
+
+    <Button
+        android:id="@+id/btn_inflist"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/cd_list"
+        app:layout_constraintEnd_toStartOf="@+id/img_inflist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_infperso" />
+
+    <ImageView
+        android:id="@+id/img_inflist"
+        android:layout_width="82dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_inflist"
+        app:layout_constraintTop_toBottomOf="@+id/btn_infperso"
+        app:srcCompat="@drawable/vinyl" />
+
+    <ImageView
+        android:id="@+id/img_infalqui"
+        android:layout_width="82dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_infalqui"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_inflist"
+        app:srcCompat="@drawable/factura" />
+
+    <Button
+        android:id="@+id/btn_infalqui"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/alquiler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_infalqui"
+        app:layout_constraintTop_toBottomOf="@+id/btn_inflist" />
+
+    <Button
+        android:id="@+id/btn_infsansi"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/sanciones"
+        app:layout_constraintEnd_toStartOf="@+id/img_infsansi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_infalqui" />
+
+    <ImageView
+        android:id="@+id/img_infsansi"
+        android:layout_width="82dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_infsansi"
+        app:layout_constraintTop_toBottomOf="@+id/btn_infalqui"
+        app:srcCompat="@drawable/sanciones" />
+
+    <ImageView
+        android:id="@+id/img_exit"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/salida" />
+
+    <Button
+        android:id="@+id/btn_proxvencer"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/prox_vencer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_proxvencer"
+        app:layout_constraintTop_toBottomOf="@+id/btn_infsansi" />
+
+    <ImageView
+        android:id="@+id/img_proxvencer"
+        android:layout_width="82dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_proxvencer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_infsansi"
+        app:srcCompat="@drawable/alert" />
+</androidx.constraintlayout.widget.ConstraintLayout>

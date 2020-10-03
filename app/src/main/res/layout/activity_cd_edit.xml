@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CdEditActivity">
+
+    <EditText
+        android:id="@+id/edt_cd_condicion"
+        android:layout_width="286dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="condicion"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_cd_name" />
+
+    <EditText
+        android:id="@+id/edt_cd_ubicacion"
+        android:layout_width="286dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="ubicacion"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_cd_condicion" />
+
+    <EditText
+        android:id="@+id/edt_cd_estado"
+        android:layout_width="286dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="estado"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_cd_ubicacion" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="177dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vinilo" />
+
+    <EditText
+        android:id="@+id/edt_cd_name"
+        android:layout_width="286dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/btn_guardar_cd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="guardar cambios"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_cd_precio"
+        android:layout_width="286dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="precio"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_cd_estado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
